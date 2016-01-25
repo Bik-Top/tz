@@ -17,7 +17,7 @@
 
       <div class="logoplace column-4">
         <a href="."> </a>
-      </div>
+      </div>         <!--в дизайне нет экранов при других размерах устройсв-->
       <div class="menu column-8">
         <ul>
           <li class="menu-button"><a>Menu</a></li>
@@ -34,7 +34,14 @@
           <li><a href="#"><span>blog</span></a></li>
           <li><a href="#"><span>features</span></a></li>
           <li><a href="#"><span>contacts</span></a></li>
-          <li class="last"><a href="#"><span class="searh"></span></a></li>
+          <li class="last">
+            <div id="site-search-wrapper">
+              <form method="get" action="">
+                <input type="search" name="name" id="site-search" style="width: 23px;">
+                <input type="submit" id="search-btn" class="">
+              </form>
+            </div>
+          </li>
         </ul>
       </div>
     </div>

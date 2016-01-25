@@ -36,6 +36,13 @@ window.onload =  function() {
     window.setInterval(show, 3000);
   }
  stealth();
+
+  document.getElementById('site-search').addEventListener('click', seter, false);
+
+  function seter(el){
+    el.target.style.width = '100px';
+    el.target.style.backgroundColor = '#fff'
+  }
 };
 function removeClass(node, name) {
   var arr = node.className.split(' ');
