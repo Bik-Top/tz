@@ -33,16 +33,25 @@ window.onload =  function() {
     var show = function() {
       scrolR()
     };
-    window.setInterval(show, 3000);
+    window.setInterval(show, 12000);
   }
  stealth();
 
   document.getElementById('site-search').addEventListener('click', seter, false);
+  //document.body.addEventListener('click', cleared, false);
 
   function seter(el){
     el.target.style.width = '100px';
     el.target.style.backgroundColor = '#fff'
   }
+  //site-search
+/*  function cleared(el){
+    console.log(el.target.id != 'site-search');
+    if(el.target.id != 'site-search'){
+      document.getElementById('site-search').style.width = '23px';
+      document.getElementById('site-search').style.backgroundColor = 'rgb(255, 255, 255)';
+    }
+  }*/
 };
 function removeClass(node, name) {
   var arr = node.className.split(' ');
